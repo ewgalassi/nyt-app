@@ -9,13 +9,16 @@
 
 <body>
     <div class="container">
-        <h1 class="row col-md-10">New York Times Search</h1>
+        <div class="bg-dark jumbotron">
+            <h1 class="display-4 text-center text-white">New York Times Search</h1>
+        </div>
         <div class="card">
-            <div class="card-header">
+            <div class="card-header" style="font-weight: bold;">
             Search Parameters
             </div>
             <form>
-                    <div class="form-group">
+                <div class="mx-4">
+                    <div class="form-group"><br>
                       <label for="exampleInputEmail1">Search Term:</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
                     </div>
@@ -35,16 +38,17 @@
                         <label for="exampleInputEmail1">End Year (Optional):</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
                     </div>
-                    <button type="submit" class="btn btn-outline-primary">Search</button>
-                    <button type="clear-results" class="btn">Clear Results</button>
-                  </form>
+                    <button type="submit" class="btn btn-outline-primary mb-4">Search</button>
+                    <button type="clear-results" class="btn btn-outline-primary mb-4">Clear Results</button>
+                  </form><br>
+                </div>
         </div>
         <br>
         <div class="card">
-            <div class="card-header">
+            <div class="card-header" style="font-weight: bold;">
                 Top Articles
             </div>
-            <div class="card">
+            <div class="card m-4">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Cras justo odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                     <li class="list-group-item">Dapibus ac facilisis in. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
@@ -52,5 +56,6 @@
                 </ul>
             </div>
         </div>
+        <br>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
